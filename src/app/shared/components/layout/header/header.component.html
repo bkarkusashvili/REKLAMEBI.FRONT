@@ -1,17 +1,31 @@
 <header>
     <nav class="container">
-        <div class="menu">
-            <a routerLink="/">
+        <div class="main">
+            <a routerLink="/" class="logo">
                 <img src="/assets/svg/LOGO.svg" alt="logo">
             </a>
-            <a href="">რეკლამა</a>
-            <a href="">კონტაქტი</a>
-            <a href="">დახმარება</a>
+            <a routerLink="" class="nav-item active">
+                <i class="icon icon-ads"></i>
+                რეკლამა
+            </a>
+            <a routerLink="" class="nav-item active">
+                <i class="icon icon-mail"></i>
+                კონტაქტი
+            </a>
+            <a routerLink="/help" class="nav-item active">
+                <i class="icon icon-ask"></i>
+                დახმარება
+            </a>
         </div>
-        <div>
-            <a href="">დამატება</a>
-            <a href="">ჩემი ანგარიში</a>
-            <a href=""></a>
+        <div class="secondary">
+            <a routerLink="">
+                დამატება
+            </a>
+            <a routerLink="">
+                <span>b</span>
+                ჩემი ანგარიში
+            </a>
+            <a routerLink=""></a>
         </div>
     </nav>
 </header>

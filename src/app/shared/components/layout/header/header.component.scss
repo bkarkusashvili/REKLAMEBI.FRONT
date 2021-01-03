@@ -1,17 +1,37 @@
 header {
-    background-color: #34383F;
+    background-color: #34383f;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 50px;
 
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .menu {
+        div {
             display: flex;
             align-items: center;
+
+            a {
+                display: flex;
+                align-items: center;
+                color: #a5aebd;
+
+                i {
+                    margin-right: 5px;
+                }
+
+                &.nav-item {
+                    padding: 0 20px;
+                }
+
+                &.logo {
+                    margin-right: 10px;
+                    transform: translateY(-3px);
+                }
+            }
         }
     }
-    
 }
