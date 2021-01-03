@@ -1,93 +1,37 @@
 header {
-    background-color: #34383F;
+    background-color: #34383f;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 50px;
 
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .nav-ads::before {
-            content: "";
-            background-image: url("/assets/svg/ads-icon.svg");
-            width: 20px;
-            height: 18px;
-            display: inline-block;
-            margin-right: 5px;
-            vertical-align: middle;
-        }
-        .nav-contact::before {
-            content: "";
-            background-image: url("/assets/svg/contact-icon.svg");
-            width: 20px;
-            height: 18px;
-            display: inline-block;
-            background-repeat: no-repeat;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-        .nav-ask::before {
-            content: "";
-            background-image: url("/assets/svg/ask-icon.svg");
-            width: 20px;
-            height: 18px;
-            display: inline-block;
-            margin-right: 5px;
-            vertical-align: middle;
-            background-repeat: no-repeat;
-        }
-        .nav-add::before {
-            content: "";
-            background-image: url("/assets/svg/add-icon.svg");
-            width: 23px;
-            height: 23px;
-            display: inline-block;
-            margin-right: 5px;
-            vertical-align: middle;
-            background-repeat: no-repeat;
-        }
-        .nav-profile::before {
-            content: "";
-            background-image: url("/assets/svg/profile-icon.svg");
-            width: 26px;
-            height: 26px;
-            margin-right: 5px;
-            vertical-align: middle;
-            display: inline-block;
-        }
-        .nav-ge::before {
-            content: "";
-            background-image: url("/assets/svg/ge-icon.svg");
-            width: 24px;
-            height: 16px;
-            margin-right: 5px;
-            vertical-align: middle;
-            display: inline-block;
-        }
-
-        a {
-            color: #A5AEBD;
-        }
-
-        .menu {
+        div {
             display: flex;
             align-items: center;
 
             a {
-                margin-right: 30px;
-            }
-            a:last-of-type {
-                margin-right: 0;
-            }
-        }
+                display: flex;
+                align-items: center;
+                color: #a5aebd;
 
-        .menu-right a {
-            margin-right: 30px;
-        }
-        .menu-right a:last-of-type {
-            margin-right: 0;
+                i {
+                    margin-right: 5px;
+                }
+
+                &.nav-item {
+                    padding: 0 20px;
+                }
+
+                &.logo {
+                    margin-right: 10px;
+                    transform: translateY(-3px);
+                }
+            }
         }
     }
-    
 }
